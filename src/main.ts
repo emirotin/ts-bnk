@@ -34,3 +34,5 @@ console.log('---');
 
 console.log("John's balance:", JohnSmith.getBalance())
 console.log("Jane's balance in DB Americas:", janeAccAmerica.getBalance())
+console.log("DB Americas balance:", DBAmericas.getBalance())
+console.log("DB Germany balance:", DBGermany.getBalance())

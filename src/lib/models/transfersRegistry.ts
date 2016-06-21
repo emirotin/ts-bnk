@@ -49,7 +49,7 @@ class TransferRegistry {
       transfers = transfers.filter(t => t.from.owner === searchParams.fromPerson)
     }
     if (searchParams.toPerson != null) {
-      transfers = transfers.filter(t => t.from.owner === searchParams.toPerson)
+      transfers = transfers.filter(t => t.to.owner === searchParams.toPerson)
     }
     return transfers;
   }
