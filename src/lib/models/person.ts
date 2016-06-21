@@ -8,7 +8,7 @@ class Person {
     private registry: Registry
   ) { }
 
-  fullName(): string {
+  get fullName(): string {
     return `${this.firstName} ${this.lastName}`
   }
 

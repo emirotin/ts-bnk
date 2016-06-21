@@ -15,7 +15,7 @@ class Account {
   }
 
   toString(): string {
-    return `#${this.number}, owner: ${this.owner.fullName()}, bank: ${this.bank.name}`
+    return `#${this.number}, owner: ${this.owner.fullName}, bank: ${this.bank.name}`
   }
 }
 
