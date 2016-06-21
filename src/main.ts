@@ -36,3 +36,18 @@ console.log("John's balance:", JohnSmith.getBalance())
 console.log("Jane's balance in DB Americas:", janeAccAmerica.getBalance())
 console.log("DB Americas balance:", DBAmericas.getBalance())
 console.log("DB Germany balance:", DBGermany.getBalance())
+
+function assertEqual(a: any, b: any, message?: string) {
+  if (a != b) {
+    throw new Error(message || 'Assert failed');
+  }
+}
+
+console.log('Running tests...');
+
+assertEqual(JohnSmith.getBalance(), 100);
+assertEqual(janeAccAmerica.getBalance(), -200);
+assertEqual(DBAmericas.getBalance(), -400);
+assertEqual(DBGermany.getBalance(), 400);
+
+console.log('...OK');
