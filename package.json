@@ -1,0 +1,28 @@
+{
+  "name": "ts-bnk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "tsc src/main.ts --outDir build/",
+    "watch": "watch 'npm run build' src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emirotin/ts-bnk.git"
+  },
+  "author": "Eugene Mirotin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emirotin/ts-bnk/issues"
+  },
+  "homepage": "https://github.com/emirotin/ts-bnk#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "typescript": "^1.8.10"
+  },
+  "devDependencies": {
+    "watch": "^0.19.1"
+  }
+}
